@@ -7,7 +7,7 @@
 function submit() {
     document.getElementById('box').style.backgroundColor = document.getElementById('bgClr').value
     document.getElementById('box').innerHTML = document.getElementById('txt').value
-    document.getElementById('box').style.fontSize = document.getElementById('fs').value
+    document.getElementById('box').style.fontSize = document.getElementById('fs').value + "px"
     document.getElementById('box').style.fontWeight = document.getElementById('fw').value
     document.getElementById('box').style.color = document.getElementById('txtClr').value
 }
@@ -17,10 +17,6 @@ function show() {
         document.getElementById('parent').style.display = 'none'
     }
     else {
-        document.getElementById('parent').style.display = 'block'
+        document.getElementById('parent').style.display = 'grid'
     }
 }
-
-
-
-
