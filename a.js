@@ -17,7 +17,7 @@ function show() {
         document.getElementById('parent').style.display = 'none'
     }
     else {
-        document.getElementById('parent').style.display = 'grid'
+        document.getElementById('parent').style.display = 'block'
     }
 }
 
