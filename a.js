@@ -13,10 +13,21 @@ function submit() {
 }
 function show() {
     let a = document.getElementById("cb3-8").checked;
+    let windowWidth=window.innerWidth
+    if(windowWidth>=540){
     if (a == false) {
         document.getElementById('parent').style.display = 'none'
     }
     else {
         document.getElementById('parent').style.display = 'grid'
+    }
+    }
+    if(windowWidth<540){
+    if (a == false) {
+        document.getElementById('parent').style.display = 'none'
+    }
+    else {
+        document.getElementById('parent').style.display = 'flex'
+    }
     }
 }

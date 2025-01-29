@@ -3,8 +3,7 @@
   padding: 0;
   font-family: "Courier New", Courier, monospace;
 }
-h1{
-  
+h1 {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 30px;
@@ -13,20 +12,20 @@ h1{
 .checkbox-wrapper-8 {
   font-size: 20px;
 }
-#txtClr {
-  color: white;
-}
 label {
   font-size: 16px;
   font-weight: 900;
 }
 #box {
-  height: 250px;
+  height: 30vh;
   color: white;
-  width: 250px;
+  width: 40vh;
+  padding: 15px;
+  background-color: black;
   border-radius: 1rem;
-  background-color: red;
-  box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+  -webkit-box-shadow: 0px 0px 23px 0px rgba(255, 255, 255, 0.56);
+  -moz-box-shadow: 0px 0px 23px 0px rgba(255, 255, 255, 0.56);
+  box-shadow: 0px 0px 23px 0px rgba(255, 255, 255, 0.56);
 }
 .checkbox-wrapper-8 {
   margin-top: 50px;
@@ -248,9 +247,9 @@ body {
 }
 
 .checkbox-wrapper-8 .tgl-skewed:checked + .tgl-btn {
-  background: #F0F2F0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(
+    to right,
+    #000c40);
 }
 
 .checkbox-wrapper-8 .tgl-skewed:checked + .tgl-btn:before {
@@ -263,4 +262,20 @@ background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, F
 
 .checkbox-wrapper-8 .tgl-skewed:checked + .tgl-btn:active:after {
   left: 10%;
+}
+@media only screen and (max-width: 600px) {
+  #parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #box{
+  margin-bottom: 50px;
+  }
+  .checkbox-wrapper-8 {
+    margin-bottom: 50px;
+  }
+  h1 {
+    font-size: 25px;
+  }
 }
